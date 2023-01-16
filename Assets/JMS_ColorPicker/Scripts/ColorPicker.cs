@@ -120,11 +120,12 @@ public class ColorPicker : MonoBehaviour, IPointerDownHandler
     } 
 
     public void OnPointerDown(PointerEventData eventData)
-	{
+    {
 		SwatchManager.PopupMenu.SetActive(false);
-	}
+    }
 
-    private void CreateMaterials() {
+    private void CreateMaterials()
+    {
         // this makes clones of the slotted GradientMaterial_Base
         // for our different RGBSV slider background images
         SaturationBG_Material = new Material(GradientMaterial_Base);
